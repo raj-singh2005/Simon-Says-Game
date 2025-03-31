@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    text-align: center;
+    background-color: brown;
+}
+h1{
+    font-size: 4rem;
+    color: white;
+    text-shadow: 6px 4px 10px  black;
+    display: inline-block;
+  
+    padding: 0.5rem 2rem;
+    margin-top: 2rem;
+    border-radius: 25px;
+    box-shadow:inset 0px 0px 15px black;
+    
+}
+
+.game-container{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 4rem;
+    margin-top: 1.5rem;
+}
+
+.btn-container{
+    display: flex;
+justify-content: center;
+align-items: center;
+width: 25rem;
+background-color: rgb(94, 81, 97);
+height: 25rem;
+margin-top: 2rem;
+border: 7px solid whitesmoke;
+border-radius: 5%;
+box-shadow: inset 0px 0px 20px black ;
+flex-wrap: wrap;
+
+}
+
+.btn{
+    background-color: red;
+    width: 8rem;
+    height: 8rem;
+    margin: 0rem 1.5rem;
+    border: 5px solid rgb(233, 232, 232);
+    box-shadow: 0px 0px 20px black;
+    border-radius: 10%;
+    
+}
+h2{
+    color: whitesmoke;
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 15px ;
+}
+
+.red{
+    background-color: rgb(233, 69, 69);
+
+}
+.yellow{
+    background-color: rgb(221, 221, 2);
+}
+.blue{
+    background-color: rgb(141, 46, 230);
+}
+.green{
+    background-color: rgb(0, 177, 0);
+}
+

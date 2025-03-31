@@ -1,0 +1,14 @@
+@media screen and ( max-width : 450px){
+   .btn-container{
+    width: 20rem;
+    height: 20rem;
+   }
+   h1{
+      font-size: 3rem;
+   }
+   .btn{
+    width:7rem ;
+    height: 7rem;
+    margin: 0rem 1rem;
+   }
+}
