@@ -57,7 +57,7 @@ const checkans = function (idx) {
       setTimeout(levelup, 1000);
     }
   } else {
-    gameText.innerHTML = `<h2>Game over your score was : <b>${level}</b> <br> Press Start</h2>`;
+    gameText.innerHTML = `<h2>Game over <br> your score was : <b>${level}</b> <br> Press Start !</h2>`;
     let body = document.querySelector("body");
     body.style.backgroundColor = "red";
     setTimeout(function () {
