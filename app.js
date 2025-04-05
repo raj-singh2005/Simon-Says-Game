@@ -8,10 +8,12 @@ let started = false;
 let level = 0;
 
 let gameText = document.querySelector("h2");
+let newbtn = document.querySelector("#new");
 
-document.addEventListener("keypress", function () {
+newbtn.addEventListener("click", function () {
   if (started === false) {
     started = true;
+    newbtn.classList.add("newbtn");
     levelup();
   }
 });
@@ -21,7 +23,7 @@ const gameFlash = function (btn) {
     btn.classList.add("flash");
     setTimeout(function () {
       btn.classList.remove("flash");
-    }, 300);
+    }, 350);
   } else {
     console.error("gameFlash received null button");
   }
@@ -32,7 +34,7 @@ const userFlash = function (btn) {
     btn.classList.add("userFlash");
     setTimeout(function () {
       btn.classList.remove("userFlash");
-    }, 300);
+    }, 350);
   } else {
     console.error("userFlash received undefined button");
   }
@@ -55,7 +57,7 @@ const checkans = function (idx) {
       setTimeout(levelup, 1000);
     }
   } else {
-    gameText.innerHTML = `<h2>Game over your score was : <b>${level}</b> <br> press any key start</h2>`;
+    gameText.innerHTML = `<h2>Game over your score was : <b>${level}</b> <br> Press Start</h2>`;
     let body = document.querySelector("body");
     body.style.backgroundColor = "red";
     setTimeout(function () {
@@ -84,4 +86,5 @@ const resetGame = function () {
   userSeq = [];
   gameSeq = [];
   level = 0;
+  newbtn.classList.remove("newbtn");
 };
