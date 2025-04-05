@@ -52,7 +52,7 @@ flex-wrap: wrap;
     margin: 0rem 1.5rem;
     border: 5px solid rgb(233, 232, 232);
     box-shadow: 0px 0px 20px black;
-    border-radius: 10%;
+    border-radius: 50%;
     
 }
 h2{
@@ -75,3 +75,10 @@ h2{
     background-color: rgb(0, 177, 0);
 }
 
+.flash{
+    background-color: white;
+}
+
+.userFlash{
+    background-color: rgb(176, 231, 176);
+}
