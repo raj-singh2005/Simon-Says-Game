@@ -61,7 +61,7 @@ const checkans = function (idx) {
     let body = document.querySelector("body");
     body.style.backgroundColor = "red";
     setTimeout(function () {
-      body.style.backgroundColor = "brown";
+      body.style.backgroundColor = "#2D3142";
     }, 150);
     resetGame();
   }
